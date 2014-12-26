@@ -1,0 +1,73 @@
+/*============================*/
+/*	FOOTER
+/*============================*/
+#footer-wrap
+	background: #333
+	color: #fff
+	padding: 80px 0
+
+	.logo
+		margin: 0 auto 80px
+
+
+	.footer-title
+		font-size: 16px
+		font-weight: bold
+		text-transform: uppercase
+		letter-spacing: 1px
+		color: #fff
+		margin: 0 0 50px
+
+	address
+		margin: 50px 0 100px
+
+
+	.form-control
+		background-color: transparent
+		border: 1px solid #808080 
+		border-radius: 0
+		box-shadow: none !important
+		color: #fff
+		font:  16px/1em $secondary-font
+		height: auto
+		padding: 12px 15px
+		+placeholder
+			color: #808080
+
+	.btn
+		color: #fff
+		padding: 10px 30px
+
+.social
+
+	ul
+		display: inline-block
+		margin: 0
+		padding: 0
+
+		+clearfix()
+
+		li
+			display: block
+			float: left
+			list-style: none
+			margin-right: 10px
+
+		a
+			text-decoration: none
+
+			&:hover
+				.fa
+					background: $main-color
+					color: #fff
+
+		.fa
+			background: #808080
+			color: #fff
+			display: block
+			font-size: 14px
+			height: 30px
+			line-height: 30px
+			width: 30px
+			text-align: center
+			@extend .transition

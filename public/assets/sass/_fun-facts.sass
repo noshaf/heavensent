@@ -1,0 +1,104 @@
+
+/*============================*/
+/*	FUN FACTS
+/*============================*/
+
+.fun-facts
+	margin: 0
+	padding: 0
+	+clearfix()
+
+	li
+		height: 290px
+		text-align: center
+		background: rgba($main-color , 0.80)
+
+
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			left: -25px
+			bottom: 0
+			background: url("../images/x.png") center center no-repeat
+			width: 50px
+
+		&:first-child
+			&:after
+				display: none !important
+
+
+	.countup
+		font-size: 50px
+		color: #333
+
+	.heading
+		color: #fff
+		margin: 0
+
+	hr
+		width: 70px
+		margin: 20px auto
+		border-top: 2px solid #333
+
+
+	&.style-2
+		border-bottom: 1px solid #e1e1e1
+		padding: 20px 0
+
+		li
+			height: 220px
+			background: none
+
+			&:after
+				left: -1px
+				bottom: 0
+				background: #e1e1e1
+				width: 1px
+
+				@media (max-width: 990px)
+					display: block
+
+			&:nth-child(3n)
+				&:after
+					display: block
+
+			@media (max-width: 765px)
+				&:nth-child(3n)
+					&:after
+						display: none
+
+		.icon
+			display: inline-block
+			font-size: 32px
+			position: relative
+			bottom: -6px
+			padding: 0 8px 0 0
+			color: $main-color
+
+		.countup
+			display: inline-block
+			padding-bottom: 10px
+			font-size: 30px
+			color: #333
+
+		p
+			color: #808080
+			margin: 0
+			text-transform: capitalize
+
+
+@media (max-width: 990px)
+	.fun-facts
+		li
+			height: 200px !important
+			&:nth-child(3n)
+				&:after
+					display: none
+
+
+@media (max-width: 765px)
+	.fun-facts
+		li
+			&:after
+				display: none

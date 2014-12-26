@@ -1,0 +1,79 @@
+/*============================*/
+/*	TYPOGRAPGY
+/*============================*/
+
+ol, ul
+	list-style: none
+
+img
+	height: auto
+	max-width: 100%
+
+
+blockquote, q
+	quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+	content: ''
+	content: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+
+blockquote
+	border-left: 4px solid $main-color
+	font-size: 1em
+	padding: 0 20px
+	color:  $main-color
+
+
+a 
+	color: $main-color
+	+transition(all 0.3s ease)
+
+	&:hover, &:active
+		text-decoration: none
+		color: darken($main-color, 10)
+
+
+h1 , h2 , h3 ,h4 , h5 , h6
+	font-family: $primary-font
+	font-weight: bold
+	text-transform: uppercase
+	letter-spacing: 1px
+	color: #333
+	line-height: 1.2
+	a
+		color: inherit
+
+
+.montserrat
+	font-family: $primary-font
+	font-weight: bold
+	text-transform: uppercase
+	letter-spacing: 1px
+	color: #333
+	font-size: 16px
+
+.heading
+	@extend .montserrat
+
+
+.color
+	color: $main-color
+
+.btn
+	border: 2px solid $main-color
+	font: 600 13px/1em $primary-font
+	color: #333
+	border-radius: 0
+	padding: 10px 20px
+	box-shadow: none
+	background: transparent
+
+	&:hover
+		background: $main-color
+		color: #fff
+		border-color: $main-color

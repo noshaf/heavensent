@@ -1,0 +1,255 @@
+/*============================*/
+/*	PORTFOLIO
+/*============================*/
+
+.isotope-item
+	z-index: 2
+
+.isotope-hidden.isotope-item
+	pointer-events: none
+	z-index: 1
+
+.isotope
+	/* change duration value to whatever you like */
+	-webkit-transition-duration: 0.8s
+	-moz-transition-duration: 0.8s
+	transition-duration: 0.8s
+
+	.isotope-item
+		-webkit-transition-duration: 0.8s
+		-moz-transition-duration: 0.8s
+		transition-duration: 0.8s
+		-webkit-transition-property: -webkit-transform, opacity
+		-moz-transition-property: -moz-transform, opacity
+		transition-property: transform, opacity
+		line-height: 0
+		float: left
+		-webkit-transition-property: height, width
+		-moz-transition-property: height, width
+		transition-property: height, width
+
+
+
+
+
+
+
+.portfolio-filters
+	margin-bottom: 50px
+
+	ul
+		margin: 0
+		padding: 0
+
+	li
+		float: left
+		@media (max-width: 765px)
+			float: none
+
+	a
+		display: block
+		padding: 5px 25px
+		font-size: 16px
+		color: #333
+		text-decoration: none
+		position: relative
+
+		span
+			width: 20px
+			height: 20px
+			line-height: 20px
+			border-radius: 50%
+			text-align: center
+			z-index: 10
+			background: #333
+			color: #fff
+			font-size: 11px
+			position: absolute
+			right: -8px
+			top: -8px
+			opacity: 0
+			+transform(scale(1.2))
+			@extend .transition
+
+		&:hover , &.active
+			color: #fff 
+			background: $main-color
+
+			span
+				opacity: 1
+				+transform(scale(1))
+
+#work-wrap
+	width: 100%
+	position: relative
+	overflow: hidden
+
+
+
+	&.style-2 , &.style-3 , &.style-4
+		margin-left: -15px
+		margin-right: -15px
+		width: auto
+		
+		.work-item
+			padding: 15px !important
+
+		.caption
+			+position(absolute, 15px)
+
+	&.extend
+		margin-left: -80px
+		margin-right: -80px
+
+		@media (max-width: 1280px)
+			margin-left: -15px
+			margin-right: -15px
+
+
+	&.style-2
+		.work-item
+			width: 50% !important
+
+			@media (max-width: 990px)
+				width: 50% !important
+
+			@media (max-width: 765px)
+				width: 100% !important
+
+	&.style-3
+		.work-item
+			width: 33.3333333333% !important
+			@media (max-width: 990px)
+				width: 50% !important
+
+			@media (max-width: 765px)
+				width: 100% !important
+	&.style-4
+		.work-item
+			width: 25% !important
+
+			@media (max-width: 990px)
+				width: 50% !important
+
+			@media (max-width: 765px)
+				width: 100% !important
+
+.work-item
+	// overflow: hidden
+	padding: 0
+	margin: 0
+	width: 25%
+	float: left
+	position: relative
+
+	&.width-x2
+		width: 50%
+
+	@media (max-width: 990px)
+		width: 50% !important
+		&.width-x2
+			width: 50% !important
+
+	@media (max-width: 765px)
+		width: 100% !important
+		&.width-x2
+			width: 100% !important
+
+	.work-image
+		position: relative
+		width: 100%
+		background: #333
+
+		img
+			width: 100%
+
+	.caption
+		text-align: center
+		background: rgba($main-color , 0.80)
+		+position(absolute, 0)
+		font-size: 16px
+		color: #333
+		opacity: 0
+		+transform(scale(0.98))
+		@extend .transition
+
+		&:after
+			content: ""
+			position: absolute
+			top:  4px
+			left: 4px
+			right: 4px
+			bottom:  4px
+			border: 4px solid #333
+
+		h2
+			@extend .montserrat
+			line-height: 24px
+			padding: 0 20px 8px
+			margin: 0
+
+		p
+			text-transform: capitalize
+			margin:  0
+
+	&:hover
+		.caption
+			opacity: 1
+			+transform(scale(1))
+
+
+
+
+.work-single
+	padding-bottom: 100px
+
+	.media
+		img
+			width: 100%
+
+
+	.slide
+		display: none
+		.owl-controls
+			position: static
+
+		.owl-pagination
+			z-index: 50
+			bottom: 20px
+			position: absolute
+			width: 100%
+
+		.owl-prev , .owl-next
+			z-index: 50
+			top: 50%
+			position: absolute
+			left: 10px
+			margin-top: -35px
+
+		.owl-next
+			right: 10px
+			left: auto
+
+
+
+
+.work-info
+	font-size: 13px
+	color: #808080
+
+	h2
+		@extend .montserrat
+		margin: 0
+
+	h4
+		@extend .montserrat
+		margin: 50px 0 0
+
+	p
+		margin: 30px 0 0
+
+	ul.details
+		margin: 30px 0 0
+		padding: 0
+		li
+			margin: 0 0 5px

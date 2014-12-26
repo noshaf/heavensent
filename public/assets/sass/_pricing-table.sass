@@ -1,0 +1,60 @@
+/*============================*/
+/*	PRICING TABLE
+/*============================*/
+
+.pricing-table
+	text-align: center
+	background: #efefef
+	color: #333
+
+	ul
+		margin: 0
+		padding: 0
+
+	li
+		padding-bottom: 30px
+
+		&:first-child
+			@extend .montserrat
+			font-size: 20px
+			padding-top: 50px
+			padding-bottom: 0
+
+		&:last-child
+			padding-top: 10px
+			padding-bottom: 45px
+
+
+		&.pricing-details
+			padding-top: 40px
+			padding-bottom: 40px
+			color: $main-color
+			font-size: 0px
+			
+
+			.pricing-price
+				font-size: 36px
+
+			.pricing-time
+				font-size: 20px
+
+				&:before
+					content: "/"
+					margin: 0 5px
+					font-size: 36px
+
+		.fa
+			opacity: 0.4
+
+	&.pricing-highlighted
+		background: #333
+		color: #fff
+
+		li
+			&:first-child
+				color: #fff
+
+		.btn
+			color: #fff
+
+

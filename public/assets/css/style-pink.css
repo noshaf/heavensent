@@ -1,0 +1,26 @@
+blockquote , a , .color , #navigation .menu-container ul > li.active a, #navigation .menu-container ul > li:hover a , .infobox .icon , .infobox.style-3 .icon:before , .call-to-action .btn:hover  , .skill.style-2 .chart span , .fun-facts.style-2 .icon, #moments .events .icon ,.team-member .social li a:hover,.team-member:hover .caption,.pricing-table li.pricing-details,.blog-item .blog-info ,.comments-cont .icon-notepad-1{
+  color:#FA3AAB ;
+}
+
+.btn:hover , .bg-primary, #header-slide .owl-controls .owl-pagination .owl-page.active span , #navigation .logo , .header-section h2:after , .infobox.style-2 .icon,.infobox.style-5:hover .text,.servicebox,.call-to-action , #moments .quotation .icon ,#moments .twitter ,.process.style-1 span,.process.style-1:hover:before,.process.style-2 span:before, .process.style-2 span:after ,.portfolio-filters a:hover, .portfolio-filters a.active,.map .office .office-img,.blog-item:hover,.widget h3:after,.widget .tagcloud a:hover,.social ul a:hover .fa{
+  background:#FA3AAB;
+}
+
+.fun-facts li , .work-item .caption , .work-item .caption  {
+  background:  rgba(250, 58, 171, 0.8);
+}
+
+blockquote , .btn ,.btn:hover , #navigation .inner ,.servicebox.style-2 span,.servicebox.style-2 span:after ,.team-member:after , .process.style-2 span , .map .office .office-img , .blog-item:hover ,.blog-single .blog-author .Image{
+  border-color:#FA3AAB ;
+}
+
+.infobox.style-5:hover .text:before {
+  border-right-color:#FA3AAB;
+}
+
+.skills-list .skill svg .circle{
+  stroke:#FA3AAB !important;
+}
+.map .office .office-img svg path{
+  fill:#FA3AAB;
+}

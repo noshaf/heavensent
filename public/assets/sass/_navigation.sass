@@ -1,0 +1,111 @@
+/*============================*/
+/*	NAVIGATION
+/*============================*/
+#navigation
+	width: 100%
+	height: 100px
+	z-index: 9995
+	position: relative
+	margin-top: -50px
+
+	.inner
+		border-bottom: 1px solid $main-color
+		position: relative
+
+
+	.logo
+		background: $main-color
+		height: 100px
+		width: 100px
+		float: left
+
+	.menu-container
+		height: 100px
+		float: right
+
+		ul
+			height: 50px
+			margin: 50px 0 0
+
+			> li
+				position: relative
+				display: inline-block
+				margin: 0 0 0 60px
+
+				&:last-child
+					// margin: 0
+
+				a
+					display: inline-block
+					font-size: 13px
+					font-weight: bold
+					color: #333
+					text-decoration: none
+					text-transform: uppercase
+					line-height: 50px
+					font-family: $primary-font
+
+				&.active , &:hover 
+					a
+						color: $main-color
+
+				ul
+					display: none
+
+
+	&.style-2
+		margin-top: 0
+		.menu-container
+
+			ul
+				height: 100px
+				margin:  0
+
+				> li
+					a
+						line-height: 100px
+
+		#mobile-menu-button
+			height: 100px
+			line-height: 100px
+			margin: 0
+		/* STYLE 2 */
+
+/* MOBILE MENU */
+
+#mobile-menu-button
+	color: #333
+	font-size: 18px
+	height: 50px
+	line-height: 50px
+	cursor: pointer
+	margin: 50px 0 0
+
+#mobile-menu
+	margin: -2px 0 0 
+	padding: 0
+	position: absolute
+	left: 0
+	right: 0
+	top: 100%
+	display: none
+
+	li
+		display: block
+		width: 100%
+
+		a
+			display: block
+			font-size: 13px
+			color: #fff
+			text-align: center
+			text-transform: capitalize
+			font-family: $primary-font
+			padding: 10px
+			background: #333
+			border-bottom: 1px solid #222
+	ul
+		display: none
+
+
+/* END NAVIGATION */
