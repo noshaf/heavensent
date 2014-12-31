@@ -755,7 +755,7 @@ h1, h2, h3, h4, h5, h6 {
   .fun-facts li {
     height: 290px;
     text-align: center;
-    background: rgba(174, 147, 100, 0.8); }
+    background: rgba(204, 204, 204, 0.8); }
     .fun-facts li:after {
       content: "";
       position: absolute;
@@ -1780,3 +1780,25 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Custom */
+
+
+.btn.get-started {
+  background-color: #F22C88;
+  float: none;
+  height: 100px;
+  width: 400px;
+  font-size: 130%;
+  margin: -10px 0;
+  padding: 35px;
+}
+
+.container.get-started {
+  text-align: center;
+}
+
+.this-about h1 {
+  font-size: 400%;
+  margin-top: 45px;
+}
